@@ -1,0 +1,65 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Armazenamento das Cores */
+:root {
+    --fundo: #0a0a0c;       
+    --dashboard: #161618;            
+    --ouro: #a58e4b;               
+    --ouro-brilhante: #d4bb7e;    
+    --borda-espessura: 1px;    
+    --texto: #e0e0e0;    
+}
+
+body{
+    
+    border: 2px solid black;
+    background-color: var(--dashboard);
+    color: var(--texto);
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+    
+}
+
+h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+menu> a{
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    padding: 4px 8px;
+    display: inline-block;
+    margin: 10px;
+
+    color: white;
+    text-decoration:none;
+}
+
+
+/* Div para fazer o fundo do site */
+
+.fixarosite {
+    max-width: 400px;
+    margin: 0 auto; 
+    min-height: 100vh; 
+    background-color: var(--bg-principal); 
+    box-shadow: 0 0 50px rgba(0,0,0,0.5)
+   
+}
+
+img{
+    width: 120px;       
+    height: 160px;
+}
