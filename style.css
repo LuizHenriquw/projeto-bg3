@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+:root{
+    --fonte-titulo: 'MedievalSharp', serif;
+    --fonte-corpo: 'EB Garamond', serif;
+}
+
+
 /* Armazenamento das Cores */
 :root {
     --fundo: #0a0a0c;       
@@ -20,12 +26,16 @@ body{
     border: 2px solid black;
     background-color: var(--dashboard);
     color: var(--texto);
+    font-family: var(--fonte-corpo);
+    font-size: 20px;
+    line-height: 1.3em ;
 }
 
-h1{
+h1 , h2{
     text-align: center;
     margin: 25px 10px;
-    
+    font-family: var(--fonte-titulo);
+    letter-spacing: 0.1em;    
 }
 
 h2{
