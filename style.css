@@ -17,7 +17,8 @@
     --dashboard: #161618;            
     --ouro: #a58e4b;               
     --ouro-brilhante: #d4bb7e;    
-    --borda-espessura: 1px;    
+    --borda-espessura: 1px;
+    --ouro-sombra: rgba(165, 142, 75, 0.6);    
     --texto: #e0e0e0;    
 }
 
@@ -35,7 +36,15 @@ h1 , h2{
     text-align: center;
     margin: 25px 10px;
     font-family: var(--fonte-titulo);
-    letter-spacing: 0.1em;    
+    letter-spacing: 0.1em;
+    line-height: 1em;    
+    
+}
+
+header > p {
+    text-indent: 10px;
+
+
 }
 
 h2{
@@ -44,15 +53,20 @@ h2{
 }
 
 
-
+menu{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--dashboard);    
+}
 
 menu> a{
+
     border: 1px solid whitesmoke;
     border-radius: 8px;
     padding: 4px 8px;
     display: inline-block;
     margin: 10px;
-
     color: white;
     text-decoration:none;
 }
