@@ -91,5 +91,72 @@ menu> a{
 
 img{
     width: 300px;       
-    height: 400px;
+    height: 600px;
+    background-size:cover ;
 }
+
+/* carossel de fotos */
+
+
+.slider{
+    margin: 0 auto;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.slides{
+    width: 700%;
+    height: 600px;
+    display: flex;  
+    transition: 2s;
+    
+}
+
+.slides > input {
+    display: none;
+
+}
+
+
+.interno , .primeira{
+    width: 14.2857%;
+    position: relative;
+    transition: 2s;
+    
+}
+
+.navegação-manual{
+    position:absolute;
+    width: 300px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px ;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.7s;
+}   
+
+.manual-btn:not(:last-child){
+    margin-right: 30px ;
+
+}
+
+.manual-btn:hover{
+    background-color:white;
+}
+
+#radio1:checked ~ .primeira { margin-left: 0; }
+#radio2:checked ~ .primeira { margin-left: -14.28%; } /* Pulou 1 */
+#radio3:checked ~ .primeira { margin-left: -28.57%; } /* Pulou 2 */
+#radio4:checked ~ .primeira { margin-left: -42.85%; } /* Pulou 3 */
+#radio5:checked ~ .primeira { margin-left: -57.14%; } /* Pulou 4 */
+#radio6:checked ~ .primeira { margin-left: -71.42%; } /* Pulou 5 */
+#radio7:checked ~ .primeira { margin-left: -85.71%; } /* Pulou 6 */
