@@ -18,7 +18,7 @@
     --ouro: #a58e4b;               
     --ouro-brilhante: #d4bb7e;    
     --borda-espessura: 1px;
-    --ouro-sombra: rgba(165, 142, 75, 0.6);    
+
     --texto: #e0e0e0;    
 }
 
@@ -96,6 +96,33 @@ img{
 }
 
 /* carossel de fotos */
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.btn_flutuante{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    width: 30px;
+    height: 40px;
+    z-index: 5;
+    cursor: pointer;
+    transition: 0.3s;
+    min-width: 30px;
+    margin: 0 5px ;
+    
+
+}
 
 
 .slider{
