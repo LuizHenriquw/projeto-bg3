@@ -47,11 +47,6 @@ header > p {
 
 }
 
-h2{
-    text-align: center;
-    margin-top: 10px;
-}
-
 
 menu{
     position: sticky;
@@ -163,20 +158,18 @@ img{
 #radio6:checked ~ .primeira { margin-left: -71.42%; } /* Pulou 5 */
 #radio7:checked ~ .primeira { margin-left: -85.71%; } /* Pulou 6 */
 
-/* dashboad personagens */
+/* dashboad personagens ASTARION */
 .dashboard{
-    background-color: whitesmoke;
-    color:black;
+    background-color: #161616;;
+    color:#ebebeb;
     padding: 10px;
     text-align: center;
+    border: var(--ouro-brilhante);
 }
 
-.container_informacoes{
+.container_informacoes {
   display: grid;
-  /* Cria 3 colunas de tamanhos exatamente iguais (1fr cada) */
-  grid-template-columns: repeat(3, 1fr); 
-  /* Espaço fixo entre as colunas, muito mais fácil que space-around */
-  column-gap: 20px; 
+  grid-template-columns: repeat(3, 1fr);  
   width: 100%;
   padding: 20px;
 }
@@ -184,12 +177,108 @@ img{
 .classes{
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o texto com a imagem dentro da célula do grid */
+  align-items: center; 
   text-align: center;
 }
 .classes > img{
     width: 110px;       
     height: 140px;
-    margin-top: 29px;
     object-fit: contain;
+}
+
+.sub_Classes{
+    font-size:14px;
+    font-weight: bolder;
+    color: #b3b3b3;
+}
+.container_habilidade{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);    
+    width: 100%;
+}
+
+.habilidades{
+    padding: 10px;
+}
+
+/* Container Principal */
+.build-progression {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #1a1a1a; 
+    color: var(--texto);
+    padding: 15px;
+    
+}
+
+h1,h2, h3 {
+    text-align: center;
+    color: #d0b987;
+
+    padding-bottom: 10px;
+}
+
+/* Estilização da Lista Ordenada */
+.lista-niveis {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-niveis li {
+    display: flex;
+    align-items: center;
+    background: #262626;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border-left: 7px solid #c9b17c;
+    padding: 10px;
+}
+
+/* Badge do Nível */
+.level-badge {
+    background: #f7f5f0;
+    color: #1a1a1a;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 15px;
+    min-width: 60px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.info strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.info p {
+    margin: 4px 0 0;
+    font-size: 0.85rem;
+    color: #b3b3b3;
+}
+
+/* Lista de Perícias */
+.lista-pericias {
+   
+    padding: 15px 15px 15px 35px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.lista-pericias li {
+    margin-bottom: 8px;
+}
+
+
+/* MODIFICACOES ESPECIAIS LAEZEL */
+
+#laezel .container_informacoes{
+  display: grid;
+  grid-template-columns:1fr;  
+    
+  width: 100%;
+  padding: 20px;
 }
