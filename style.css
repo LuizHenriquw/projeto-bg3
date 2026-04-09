@@ -119,9 +119,7 @@ img{
     cursor: pointer;
     transition: 0.3s;
     min-width: 30px;
-    margin: 0 5px ;
-    
-
+    margin: 0 5px ;    
 }
 
 
@@ -155,30 +153,7 @@ img{
     
 }
 
-.navegação-manual{
-    position:absolute;
-    width: 300px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
 
-.manual-btn{
-    border: 2px solid white;
-    padding: 5px ;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.7s;
-}   
-
-.manual-btn:not(:last-child){
-    margin-right: 30px ;
-
-}
-
-.manual-btn:hover{
-    background-color:white;
-}
 
 #radio1:checked ~ .primeira { margin-left: 0; }
 #radio2:checked ~ .primeira { margin-left: -14.28%; } /* Pulou 1 */
@@ -187,3 +162,34 @@ img{
 #radio5:checked ~ .primeira { margin-left: -57.14%; } /* Pulou 4 */
 #radio6:checked ~ .primeira { margin-left: -71.42%; } /* Pulou 5 */
 #radio7:checked ~ .primeira { margin-left: -85.71%; } /* Pulou 6 */
+
+/* dashboad personagens */
+.dashboard{
+    background-color: whitesmoke;
+    color:black;
+    padding: 10px;
+    text-align: center;
+}
+
+.container_informacoes{
+  display: grid;
+  /* Cria 3 colunas de tamanhos exatamente iguais (1fr cada) */
+  grid-template-columns: repeat(3, 1fr); 
+  /* Espaço fixo entre as colunas, muito mais fácil que space-around */
+  column-gap: 20px; 
+  width: 100%;
+  padding: 20px;
+}
+
+.classes{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o texto com a imagem dentro da célula do grid */
+  text-align: center;
+}
+.classes > img{
+    width: 110px;       
+    height: 140px;
+    margin-top: 29px;
+    object-fit: contain;
+}
